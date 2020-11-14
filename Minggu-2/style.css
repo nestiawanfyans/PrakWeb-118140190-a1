@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#header {
+  height: 90vh;
+  width: 100%;
+}
+#header .navbar {
+  padding: 30px 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+#header .navbar .left {
+  float: left;
+}
+#header .navbar .right {
+  float: right;
+  width: 35%;
+}
+#header .navbar .right .flex {
+  display: flex;
+  justify-content: space-between;
+}
+#header .navbar .right .flex li {
+  padding: 20px 30px;
+  margin-top: -20px;
+}
+#header .navbar .right .flex li a {
+  color: black;
+  transition: all 0.3s;
+}
+#header .navbar .right .flex li a:hover {
+  color: #777777;
+}
+#header .banner {
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+#header .banner .flex {
+  display: inline-flex;
+  vertical-align: middle;
+}
+#header .banner .flex .text-banner {
+  transform: translate(0, 27vh);
+  width: 42vw;
+  height: 185px;
+}
+#header .banner .flex .text-banner h1 {
+  font-size: 80px;
+  color: #212121;
+}
+#header .banner .flex .text-banner p {
+  font-size: 30px;
+}
+#header .banner .flex .images-banner {
+  width: 38vw;
+  position: relative;
+  transform: translate(3rem, 8vh);
+  background-color: #42d595;
+}
+#header .banner .flex .images-banner .circle:nth-child(1) {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 9999;
+  transform: translate(-2rem, 50vh);
+  background-color: #eb5f7d;
+  width: 7rem !important;
+  border-radius: 20px !important;
+}
+#header .banner .flex .images-banner .circle:nth-child(2) {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 9999;
+  transform: translate(26.6rem, 24vh);
+  background-color: #3d7ad6;
+  width: 7rem !important;
+  border-radius: 20px !important;
+}
+#header .banner .flex .images-banner .circle:nth-child(3) {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 9999;
+  transform: translate(5rem, 13.4vh);
+  background-color: #664aca;
+}
+#header .banner .flex .images-banner .circle:nth-child(4) {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 9999;
+  transform: translate(19rem, 61.4vh);
+  background-color: #2ac9ac;
+  width: 4rem !important;
+  border-radius: 20px !important;
+}
+#header .banner .flex .images-banner img {
+  margin: 0 auto;
+  position: absolute;
+  width: 97%;
+  height: 30rem;
+  z-index: 99;
+}
+
+#galeri {
+  height: auto;
+  width: 100%;
+}
+#galeri .container .header {
+  margin: 20px 0;
+}
+#galeri .container .header h2 {
+  font-size: 40px;
+}
+#galeri .container .header .hr-btn {
+  border: 2px solid #42d595;
+  width: 50px;
+  border-radius: 3px;
+}
+#galeri .container .galeri-img img:nth-child(1) {
+  width: 260px;
+  height: 240px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  position: relative;
+}
+#galeri .container .galeri-img img:nth-child(2) {
+  width: 260px;
+  height: 240px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  position: relative;
+}
+#galeri .container .galeri-img img:nth-child(3) {
+  width: 260px;
+  height: 240px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  position: relative;
+}
+#galeri .container .galeri-img img:nth-child(4) {
+  width: 260px;
+  height: 240px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  position: relative;
+}
+#galeri .container .galeri-img img:nth-child(5) {
+  width: 260px;
+  height: 240px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  position: relative;
+}
+#galeri .container .galeri-img img:nth-child(6) {
+  width: 260px;
+  height: 240px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  position: relative;
+}
+#galeri .container .galeri-img img:nth-child(7) {
+  width: 260px;
+  height: 240px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  position: relative;
+}
+#galeri .container .galeri-img img:nth-child(8) {
+  width: 260px;
+  height: 240px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  position: relative;
+}
+#galeri .container .galeri-img img:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  width: 270px;
+  height: 250px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
