@@ -9,6 +9,19 @@
   display: none;
 }
 
+.scrolldown {
+  position: absolute;
+  bottom: 80px;
+  right: 50px;
+}
+.scrolldown p {
+  transform: rotate(-90deg);
+}
+.scrolldown p img {
+  transform: rotate(90deg);
+  padding-left: 15px;
+}
+
 li {
   list-style: none;
 }
@@ -88,7 +101,7 @@ a {
   border-radius: 100%;
   position: absolute;
   z-index: 9999;
-  transform: translate(-2rem, 50vh);
+  transform: translate(-2rem, 21rem);
   background-color: #eb5f7d;
   width: 7rem !important;
   border-radius: 20px !important;
@@ -99,7 +112,7 @@ a {
   border-radius: 100%;
   position: absolute;
   z-index: 9999;
-  transform: translate(26.6rem, 24vh);
+  transform: translate(26.6rem, 10rem);
   background-color: #3d7ad6;
   width: 7rem !important;
   border-radius: 20px !important;
@@ -110,7 +123,7 @@ a {
   border-radius: 100%;
   position: absolute;
   z-index: 9999;
-  transform: translate(5rem, 13.4vh);
+  transform: translate(5rem, 5rem);
   background-color: #664aca;
 }
 #header .banner .flex .images-banner .circle:nth-child(4) {
@@ -119,7 +132,7 @@ a {
   border-radius: 100%;
   position: absolute;
   z-index: 9999;
-  transform: translate(19rem, 61.4vh);
+  transform: translate(19rem, 26.4rem);
   background-color: #2ac9ac;
   width: 4rem !important;
   border-radius: 20px !important;
@@ -127,7 +140,7 @@ a {
 #header .banner .flex .images-banner img {
   margin: 0 auto;
   position: absolute;
-  width: 97%;
+  width: 485px;
   height: 30rem;
   z-index: 99;
 }
@@ -143,9 +156,10 @@ a {
   font-size: 40px;
 }
 #galeri .container .header .hr-btn {
-  border: 2px solid #42d595;
+  border: 3px solid #42d595;
   width: 50px;
   border-radius: 3px;
+  margin-left: 5px;
 }
 #galeri .container .galeri-img img:nth-child(1) {
   width: 260px;
@@ -217,6 +231,57 @@ a {
   height: 250px;
   margin: 0px;
   cursor: pointer;
+}
+
+#about {
+  height: auto;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 30px 0;
+  background-color: #fafafa;
+}
+#about .container .header {
+  margin: 20px 0;
+}
+#about .container .header h2 {
+  font-size: 40px;
+}
+#about .container .header .hr-btn {
+  border: 3px solid #42d595;
+  width: 50px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+#about .text-center {
+  text-align: center;
+}
+#about .text-center p {
+  text-align: justify;
+}
+
+#contact {
+  height: auto;
+  width: 100%;
+}
+#contact .container .header {
+  margin: 20px 0;
+}
+#contact .container .header h2 {
+  font-size: 40px;
+}
+#contact .container .header .hr-btn {
+  border: 3px solid #42d595;
+  width: 50px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+footer {
+  padding: 30px 0;
+}
+footer .container p {
+  font-size: 12.5px;
 }
 
 /*# sourceMappingURL=style.css.map */

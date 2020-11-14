@@ -13,6 +13,18 @@ $fontStyle: 'DM Sans', sans-serif
     &::-webkit-scrollbar 
         display: none
 
+.scrolldown
+    position: absolute
+    bottom: 80px
+    right: 50px
+
+    p
+        transform: rotate(-90deg)
+
+        img
+            transform: rotate(90deg)
+            padding-left: 15px
+
 
 li
     list-style: none
@@ -96,23 +108,23 @@ a
                         z-index: 9999
                         
                         @if ($i == 1)
-                            transform: translate(-2rem, 50vh)
+                            transform: translate(-2rem, 21rem)
                             background-color: #eb5f7d
                             width: 7rem !important
                             border-radius: 20px !important
 
                         @else if ($i == 2)
-                            transform: translate(26.6rem, 24vh)  
+                            transform: translate(26.6rem, 10rem)  
                             background-color: #3d7ad6  
                             width: 7rem !important
                             border-radius: 20px !important
 
                         @else if ($i == 3)
-                            transform: translate(5rem, 13.4vh)  
+                            transform: translate(5rem, 5rem)  
                             background-color: #664aca 
 
                         @else if ($i == 4)
-                            transform: translate(19rem, 61.4vh)  
+                            transform: translate(19rem, 26.4rem)  
                             background-color: #2ac9ac
                             width: 4rem !important
                             border-radius: 20px !important                       
@@ -120,7 +132,7 @@ a
                 img 
                     margin: 0 auto
                     position: absolute
-                    width: 97%
+                    width: 485px
                     height: 30rem
                     z-index: 99
 
@@ -136,9 +148,10 @@ a
                 font-size: 40px
             
             .hr-btn
-                border: 2px solid $baseColer
+                border: 3px solid $baseColer
                 width: 50px
                 border-radius: 3px
+                margin-left: 5px
         
         .galeri-img
             @for $i from 1 through 8
@@ -156,5 +169,55 @@ a
                 height: 250px
                 margin: 0px
                 cursor: pointer
+
+#about
+    height: auto
+    width: 100%
+    padding-top: 50px
+    padding-bottom: 50px
+    margin: 30px 0
+    background-color: #fafafa
+
+    .container
+        .header
+            margin: 20px 0
+
+            h2
+                font-size: 40px
+            
+            .hr-btn
+                border: 3px solid $baseColer
+                width: 50px
+                border-radius: 3px
+                margin-left: 5px
+    
+    .text-center
+        text-align: center
+
+        p
+            text-align: justify
                 
             
+#contact
+    height: auto
+    width: 100%
+
+    .container
+        .header
+            margin: 20px 0
+
+            h2
+                font-size: 40px
+            
+            .hr-btn
+                border: 3px solid $baseColer
+                width: 50px
+                border-radius: 3px
+                margin-left: 5px
+
+footer
+    padding: 30px 0
+
+    .container
+        p
+            font-size: 12.5px
