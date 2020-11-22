@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
 
         <?php if(isset($_GET['insertData']) && $_GET['insertData'] == 1){ ?>
             <div class="alert alert-success" role="alert">
@@ -49,7 +49,9 @@
 
 <hr>
 
-    <div class="container mt-5 mb-5">
+    <h3 class="text-center mt-5">Cari Nama</h3>
+
+    <div class="container mt-2 mb-5">
         <?php if(isset($_GET['delete']) && $_GET['delete'] == 1){ ?>
             <div class="alert alert-success" role="alert">
                 Berhasil Menghapus Data.
