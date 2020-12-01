@@ -8,7 +8,7 @@ How To Setup ?
 
     1. Edit Nama database sesuai dengan nama database yang dibuat pada file : Aplication/config/database.php
     2. kemudian import database dengan masukkan file dengan nama tugas_minggu_4 (1).sql
-    2. url : menggunakan index.php | ex : localhost/codeigniter/index.php/{controller}/{method}
+    3. url : menggunakan index.php | ex : localhost/codeigniter/index.php/{controller}/{method}
 
 *********
 User yang bisa di gunakan : 
