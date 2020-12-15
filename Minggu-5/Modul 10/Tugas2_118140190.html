@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 Modul 10 - 118140190 - Nestiawan Ferdiyanto</title>
+</head>
+<body>
+    <div>
+        <h2>getElementByName()</h2>
+        <p name="paragraph1" class="paragraph">Paragraph 1<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatum sunt alias tempora perspiciatis nostrum odit voluptates consequatur, soluta, sit temporibus at labore quo inventore architecto exercitationem maiores, vero doloremque.</p>
+        <button onclick="cp1()">Change Paragraph 1</button>
+    </div>
+
+    <div>
+        <h2>getElementByClassName()</h2>
+        <p class="paragraph2 paragraph">Paragraph 2<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error iusto ipsa explicabo, pariatur quos modi facere veritatis ipsam officia corrupti laboriosam accusantium, unde beatae est! Quaerat aperiam eos odit eveniet?</p>
+        <button onclick="cp2()">Change Paragraph 2</button>
+    </div>
+
+    <div>
+        <h2>getElementByTagName()</h2>
+        <p>An unordered list:</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
+        <button onclick="cl()">Change List to Ordered List</button>
+        
+    </div>
+
+    <div>
+        <h2>querySelector()</h2>
+        <p class="paragraph4 paragraph">Paragraph 4<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error iusto ipsa explicabo, pariatur quos modi facere veritatis ipsam officia corrupti laboriosam accusantium, unde beatae est! Quaerat aperiam eos odit eveniet?</p>
+        <button onclick="cp3()">Change Paragraph 4</button>
+    </div>
+
+    <br><br>
+    <button onclick="changeAllParagraph()">Change All Paragraph</button>
+    <script>
+        function cp1() {
+            var p1 = document.getElementsByName("paragraph1")[0];
+            p1.innerHTML = "Paragraph 1 Telah Diubah!";
+            p1.style.color = "blue";
+        }
+
+        function cp2() {
+            var p2 = document.getElementsByClassName("paragraph2")[0];
+            p2.innerHTML = "Paragraph 2 Telah Diubah!";
+            p2.style.color = "blue";
+        }
+
+        function cl() {
+            var ul = document.getElementsByTagName('ul')[0];
+            var ol = document.createElement('ol');
+            ol.innerHTML = ul.innerHTML;
+            ul.parentNode.replaceChild(ol, ul);
+        }
+
+        function cp3() {
+            var query = document.querySelector(".paragraph4");
+            query.innerHTML = "Paragraph 4 Telah Diubah!";
+            query.style.backgroundColor = "green";
+            query.style.color = "white";
+        }
+
+        function changeAllParagraph() {
+            var x = document.querySelectorAll(".paragraph");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.backgroundColor = "brown";
+                x[i].style.color = "white";
+                x[i].innerHTML = "Semua Paragraph Berhasil di ubah!";
+            }
+        }
+    </script>
+</body>
+</html>

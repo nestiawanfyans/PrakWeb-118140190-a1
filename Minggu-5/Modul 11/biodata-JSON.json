@@ -1,0 +1,17 @@
+{
+    "biodata": {
+        "nama" : "Nestiawan Ferdiyanto",
+        "hobby" : "Mendengarkan Musik dan baca",
+        "jenisKelamin" : "Laki-Laki",
+        "alamat" : {
+            "perumahan" : "Nusantara Permai",
+            "kecamatan" : "Sukabumi",
+            "kota" : "Bandar Lampung",
+            "negara" : "Indonesia"
+        },
+        "sosialMedia": {
+            "instagram" : "nestfyan",
+            "linkedin" : "https://www.linkedin.com/in/nestiawan-ferdiyanto-97595410b"
+        }
+    }
+}

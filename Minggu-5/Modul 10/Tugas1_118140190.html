@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 Modul 10 - Nestiawan ferdiyanto - 118140190</title>
+</head>
+<body>
+    
+    <div class="form">
+        <input type="text" name="input">
+        <button onclick="tambahData()">Tambah Data</button>
+    </div>
+
+    <ul id="data"></ul>
+
+    <script>
+        var listData=[
+            "Buku Tulis",
+            "Pensil",
+            "Spidol"
+        ];
+
+        function dataList(){
+            var x = document.getElementById('data');
+            x.innerHTML = "";
+
+            for(var i = 0; i < listData.length; i++){
+                var buttonEdit = "<a href='#' onclick='ubah("+i+")'>Edit</a>";
+                var buttonDel = "<a href='#' onclick='hapus("+i+")'>Hapus</a>";
+            
+                x.innerHTML +=  "<li>" + listData[i] + " ["+buttonEdit + " | "+ buttonDel +"]</li>";
+            }
+        }
+
+        function tambahData(){
+            var input = document.querySelector("input[name=input]").value;
+            if(input==""){
+                alert("Input tidak bisa kosong!");
+            }else{
+                listData.push(input);
+                dataList();
+            }
+        }
+
+        function ubah(id){
+            var newData = prompt("Nama Baru", listData[id]);
+            if(newData==""){
+                alert("Input tidak bisa kosong!");
+            }else{
+                listData[id] = newData;
+                dataList();
+            }
+        }
+
+        function hapus(id){
+            listData.splice(id,1);
+            dataList();
+        }
+
+        dataList();
+    </script>
+
+</body>
+</html>

@@ -8,9 +8,6 @@
     $foto       = $_POST['foto'];
     $jurusan    = $_POST['jurusan'];
 
-    echo $nrp . " + " . $nama . " + " . $alamat . " + " . $foto . " + " . $jurusan . " + ";
-    // return 0;
-
     $update = mysqli_query($koneksi, "UPDATE mahasiswa SET nama='$nama', alamat='$alamat', foto='$foto', jurusan='$jurusan' WHERE nrp='$nrp'");
 
     // echo $update;
